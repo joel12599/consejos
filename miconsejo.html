@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis consejos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+          <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+    <div class="logo-menu">
+      <h1>Consejos Diarios</h1>
+    </div>
+    <nav id="nav-menu" class="nav-hidden">
+      <a href="index.html">Inicio</a>
+      <a href="api.html">Consejos</a>
+      <a href="miconsejo.html">Mis consejos</a>
+    </nav>
+  </header>
+
+  <section style="flex-direction: column;">
+    <div class="container">
+      <h2>Crear un consejo</h2>
+      <input id="miconsejo" placeholder="Escribe el consejo del día..." required style="width: 500px;">
+      <button onclick="enviar()">Enviar</button>
+    </div>    
+
+    <div class="container">
+      <h2>Mis consejos</h2>
+      <ul id="lista-consejos"></ul> 
+    </div>  
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
