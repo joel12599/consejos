@@ -17,17 +17,14 @@ function enviar() {
     return;
   }
 
-  // Crear el nuevo elemento <li> y agregarlo a la lista
   const nuevoItem = document.createElement('li');
   nuevoItem.textContent = consejohoy;
   lista.appendChild(nuevoItem);
 
-  // Guardar en localStorage
   let consejosGuardados = JSON.parse(localStorage.getItem('misConsejos')) || [];
   consejosGuardados.push(consejohoy);
   localStorage.setItem('misConsejos', JSON.stringify(consejosGuardados));
 
-  // Limpiar el input
   document.getElementById('miconsejo').value = '';
 }
 function cargarConsejosGuardados() {
@@ -41,7 +38,6 @@ function cargarConsejosGuardados() {
   });
 }
 
-// Ejecutar al cargar la página
 document.addEventListener('DOMContentLoaded', cargarConsejosGuardados);
 
 
