@@ -7,40 +7,44 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Consejos Diarios</h1>
-    <nav>
+<header >   
+     <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+    <div class="logo-menu">
+      <h1>Consejos Diarios</h1>
+    </div>
+    <nav id="nav-menu" class="nav-hidden">
       <a href="index.html">Inicio</a>
       <a href="api.html">Consejos</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="miconsejo.html">Mis consejos</a>
     </nav>
   </header>
 
   <main>
-<div class="contai1">
-  <h2>App de Consejos</h2>
-  <p>
-    Bienvenido a nuestra aplicación de consejos. Aquí encontrarás mensajes que pueden ayudarte a reflexionar, motivarte o simplemente sacarte una sonrisa en el momento en que más lo necesites.  
-    <br><br>
-    A veces, una sola frase puede cambiar tu día o darte esa pequeña chispa que te hacía falta. Por eso hemos creado esta herramienta: para que tengas siempre a mano una dosis de inspiración o una palabra sabia.  
-    <br><br>
-    Solo necesitas escribir tu nombre y tu correo electrónico para comenzar a recibir consejos personalizados. ¡Déjate sorprender por la sabiduría de las palabras!
-  </p>
-</div>
+    <div class="container">
+      <h2>App de Consejos</h2>
+      <p>
+        Bienvenido a nuestra aplicación de consejos. Aquí encontrarás mensajes que pueden ayudarte a reflexionar, motivarte o simplemente sacarte una sonrisa en el momento en que más lo necesites.  
+        A veces, una sola frase puede cambiar tu día o darte esa pequeña chispa que te hacía falta. Por eso hemos creado esta herramienta: para que tengas siempre a mano una dosis de inspiración o una palabra sabia.  
+        Solo necesitas escribir tu nombre y tu correo electrónico para comenzar a recibir consejos personalizados. ¡Déjate sorprender por la sabiduría de las palabras!
+      </p>
+    </div>
 
+    <div class="container">
+      <h2>Te damos la Bienvenida</h2>
+      <h4>Por favor ingrese estos datos:</h4>
 
-  <div class="contai">
-
- <form onsubmit="alernom()">
-    <input type="text" placeholder="escribe tu nombre" id="nombre" required>
-    <input type="email" placeholder="escribe tu correo" id="correo" required>
-    
-    <button type="submit">Enviar</button>
-
-</form>
-
-  </div>
+      <form onsubmit="alernom()">
+        <input type="text" placeholder="Escribe tu nombre" id="nombre" required>
+        <input type="email" placeholder="Escribe tu correo" id="correo" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
   <script src="script.js"></script>
 </body>
