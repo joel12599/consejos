@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consejos - API</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>    
+      <button id="menu-toggle" class="hamburger">&#9776;</button>
+
+    <div class="logo-menu">
+      <h1>Consejos Diarios</h1>
+    </div>
+    <nav id="nav-menu" class="nav-hidden">
+      <a href="index.html">Inicio</a>
+      <a href="api.html">Consejos</a>
+      <a href="miconsejo.html">Mis consejos</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Consejo Aleatorio</h2>
+      <button onclick="mostrarConsejo()" style="width: 200px;">Obtener consejo</button>
+      <div id="api-content" class="tarjeta"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
